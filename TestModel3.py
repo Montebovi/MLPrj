@@ -42,7 +42,7 @@ random_split = 39
 
 DATASET_PATH = "H:/PycharmProjects/mynn/MLCUP1.csv"
 
-dataset = pd.read_csv(DATASET_PATH)
+dataset = .read_csv(DATASET_PATH)
 
 X_train = dataset.drop(["output1","output2",  "ID"], axis=1)
 # X = X.drop("output2", axis=1)

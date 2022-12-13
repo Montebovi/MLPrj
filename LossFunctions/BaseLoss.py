@@ -47,9 +47,3 @@ class BaseLoss:
 
         # Return the data and regularization losses
         return data_loss, regularization_loss
-    @staticmethod
-    def GetLossByName(lossName):
-        if lossName.lower() == "mse":
-            return Mse()
-        else:
-            raise NotImplementedError("Unexpected loss function")

@@ -5,12 +5,9 @@ from sklearn.model_selection import train_test_split
 from Layers import Dense
 from LossRegularization import RegL1
 from Optimizers import SGD
-from TrainCallbacks import TrainCallback, TestCallback, BestCheckPoint, EarlyStopping
-from model import Model
 import matplotlib.pyplot as plt
-import os
 
-DATASET_PATH = "H:/PycharmProjects/mynn/MLCUP1.csv"
+DATASET_PATH = "./MLCUP.csv"
 dataset = pd.read_csv(DATASET_PATH)
 
 X = dataset.drop(["output1", "output2", "ID"], axis=1)

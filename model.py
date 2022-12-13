@@ -1,9 +1,9 @@
 # Model class
-import Optimizers
 from Layers import Input
-from BaseLoss import BaseLoss
-from Optimizers import OptimezerBase
+
 import pickle
+
+from LossFunctions.LossMapper import LossMapper
 
 class Model:
     def __init__(self):
@@ -48,7 +48,7 @@ class Model:
         self.layers.append(layer)
 
     def compile(self, *, lossname, optimizer):
-        self.loss = BaseLoss.GetLossByName(lossname)
+        self.loss = LossMapper.GetByName(lossname)
         self.optimizer = optimizer
         self.input_layer = Input()
         layer_count = len(self.layers)

@@ -1,5 +1,5 @@
 import numpy as np
-from BaseLoss import BaseLoss
+from LossFunctions.BaseLoss import BaseLoss
 
 # Mean Squared Error loss
 class Mse(BaseLoss):  # L2 loss

@@ -9,7 +9,7 @@ from Optimizers import SGD, Optimizer_Adam
 from TrainCallbacks import TrainCallback, TestCallback, BestCheckPoint, EarlyStopping
 from model import Model
 
-retraining = True
+retraining = False
 
 def straified_split(x,y,y_idx=0):
     ysorted = np.sort(y)
@@ -43,7 +43,7 @@ class LogTotaleDiff(TrainCallback):
 MODE = "all"
 
 filename = "models/model3.pkl"
-DATASET_PATH = "C:/Users/Michele/Documents/MLCUP.csv"
+DATASET_PATH = "./MLCUP.csv"
 
 dataset = pd.read_csv(DATASET_PATH)
 

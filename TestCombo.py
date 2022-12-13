@@ -50,7 +50,7 @@ def showResults(modelName, y_val, predict):
     print(modelName + " - Differenza media (output2): ", tot2 / len(X_val))
 
 
-DATASET_PATH = "C:/Users/Michele/Documents/MLCUP.csv"
+DATASET_PATH = "./MLCUP.csv"
 
 filename1 = "testmodel2_10bins2.pkl"
 filename2 = "testmodel2_10bins.pkl"

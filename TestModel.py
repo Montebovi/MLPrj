@@ -2,7 +2,6 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 from Layers import Dense
-from LossFunctions import MeanSquaredError
 from LossRegularization import RegL1
 from TrainCallbacks import TestCallback, EarlyStopping
 from model import Model

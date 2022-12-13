@@ -2,7 +2,7 @@ import numpy as np
 
 from ActivationFunctions import ReLU, TanH
 from Layers import Dense
-from LossFunctions import MeanSquaredError
+from Mse import Mse
 from LossRegularization import RegL1
 from Optimizers import SGD
 
@@ -26,7 +26,7 @@ dense2 = Dense(1)
 
 optimizer = SGD(learning_rate=0.03, decay=0.00, momentum=0.8)
 
-lossFun = MeanSquaredError()
+lossFun = Mse()
 
 start = timeit.default_timer()
 

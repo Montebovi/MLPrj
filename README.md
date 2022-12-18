@@ -8,8 +8,8 @@ This project will...
 ##### Features
 - [ ] Comment everything
 - [ ] Insert SoftMax inside ActivationFunctions.py (Monk) (!) (Michele)
-- [ ] Insert MeanEuclideanDistance inside LossFunctions.py (Michele)
-- [ ] Insert regularization function L2 inside LossRegularization.py (Michele)
+- [x] Insert MeanEuclideanDistance inside LossFunctions.py (Michele)
+- [x] Insert regularization function L2 inside LossRegularization.py (Michele)
 - [ ] NN after 100% Monk
 - [ ] Refactor (Marco) (2/3 days)
 

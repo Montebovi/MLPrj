@@ -14,7 +14,7 @@ from trainCallback import BestCheckPoint, EarlyStopping
 # configuration ########################################################
 RETRAIN_MODEL = True
 MODEL_FILENAME = "model_regression_mee.pkl"
-DATASET_PATH = "H:/PycharmProjects/mynn2/MLCUP1.csv"
+DATASET_PATH = "MLCUP1.csv"
 MODELS_PATH = "models"
 # ######################################################################
 
